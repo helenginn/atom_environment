@@ -17,7 +17,7 @@ gen_src = custom_target('commit-output',
                         build_by_default: true,
                         build_always_stale: true)
 
-executable('atom_environment', gen_src, moc_files,
+executable('atom_environment', gen_src, 
 'src/main.cpp', 
 'src/Environment.cpp', 
 cpp_args: ['-std=c++11'], dependencies : [ 
