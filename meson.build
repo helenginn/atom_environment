@@ -4,9 +4,6 @@ vag = dependency('libvag')
 helen3d = dependency('helen3d')
 helencore = dependency('helencore')
 
-cc = meson.get_compiler('c')
-m_dep = cc.find_library('m', required : false)
-
 # Run the version and hash generator
 hash_script = find_program('get_hash.sh')
 
